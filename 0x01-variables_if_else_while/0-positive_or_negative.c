@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
 *main - is the main function, declares state of number
@@ -17,10 +18,19 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n == 0)
-		puts((n)" is zero");
+	{
+		printf("%i", n);
+		printf("%s", " is zero\n");
+	}
 	else if (n > 0)
-		puts((n)"is positive");
-	else
-		puts((n)" is negative");
+	{
+		printf("%i", n);
+		printf("%s", " is positive\n");
+	}
+	else if (n < 0)
+	{
+		printf("%i", n);
+		printf("%s", " is negative\n");
+	}
 	return (0);
 }
