@@ -10,8 +10,8 @@
 */
 int main(void)
 {
-	char d1;
-	char d2;
+	int d1;
+	int d2;
 	int sum;
 
 	d1 = 48;
@@ -22,7 +22,7 @@ int main(void)
 	{
 		putchar(d1);
 		putchar(d2);
-		if (sum < 100)
+		if (sum < 99)
 		{
 			putchar(',');
 			putchar(' ');
@@ -37,5 +37,6 @@ int main(void)
 			d2 = 48;
 		}
 	}
+	putchar('\n');
 	return (0);
 }
