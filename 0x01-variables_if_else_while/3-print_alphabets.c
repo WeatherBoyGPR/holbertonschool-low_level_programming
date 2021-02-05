@@ -16,12 +16,12 @@ int main(void)
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		printf("%c", i);
+		putchar(i);
 	}
 	for (I = 'A'; I <= 'Z'; I++)
 	{
-		printf("%c", I);
+		putchar(I);
 	}
-	printf("%c", '\n');
+	putchar('\n');
 	return (0);
 }

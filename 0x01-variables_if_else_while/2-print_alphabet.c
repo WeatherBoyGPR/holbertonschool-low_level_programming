@@ -14,8 +14,8 @@ int main(void)
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		printf("%c", i);
+		putchar(i);
 	}
-	printf("%c", '\n');
+	putchar('\n');
 	return (0);
 }
