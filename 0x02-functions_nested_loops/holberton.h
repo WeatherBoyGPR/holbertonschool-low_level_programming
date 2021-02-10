@@ -18,15 +18,14 @@ int _putchar(char c)
 
 /**
  * house  - prints "Holberton"
- * @s: The string to print
  *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-void house(void)
+int house(void)
 {
-	printf("%s", "Holberton\n");
-        return;
+	printf("Holberton\n");
+	return (0);
 }
 
 #endif
