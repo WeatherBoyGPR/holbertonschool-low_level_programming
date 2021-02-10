@@ -10,6 +10,12 @@
 int print_last_digit(int birdland)
 {
 	int CMOON;
-	CMOON = birdland % 10;
+
+	CMOON = (birdland % 10);
+	if (CMOON < 0)
+	{
+		CMOON = (CMOON * -1);
+	}
+	_putchar(CMOON + '0');
 	return (CMOON);
 }
