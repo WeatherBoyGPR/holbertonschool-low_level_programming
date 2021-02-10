@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *print_alphabet - prints text
+ *print_alphabet_x10 - prints text
  *
  *Description: prints alphabet ten times
  *Return: 0
@@ -20,5 +20,4 @@ void print_alphabet_x10(void)
 	_putchar('\n');
 	timer++;
 }
-	return;
 }
