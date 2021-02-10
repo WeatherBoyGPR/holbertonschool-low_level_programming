@@ -6,7 +6,6 @@
  *Description: prints alphabet ten times
  *Return: 0
  */
-
 void print_alphabet_x10(void)
 {
 	int timer = 0;
