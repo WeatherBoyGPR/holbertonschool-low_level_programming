@@ -9,6 +9,7 @@
  */
 int print_last_digit(int birdland)
 {
-	birdland = (birdland % 10);
-	return (birdland);
+	int CMOON;
+	CMOON = birdland % 10;
+	return (CMOON);
 }
