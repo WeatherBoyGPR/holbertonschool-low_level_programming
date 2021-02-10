@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- *main - prints absolute value
+ *_abs - prints absolute value
+ *@parade: the entered integer
  *
  *Description: prints absolute value
  *Return: absolute value of number
@@ -12,5 +13,5 @@ int _abs(int parade)
 	{
 		parade = (parade * -1);
 	}
-	return parade;
+	return (parade);
 }
