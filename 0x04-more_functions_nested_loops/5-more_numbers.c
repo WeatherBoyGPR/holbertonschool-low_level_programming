@@ -9,7 +9,7 @@ void more_numbers(void)
 {
 	int promise = 0;
 
-	for (promise == 0; promise <= 10; promise++)
+	for (; promise <= 10; promise++)
 	{
 		int holydiver = 48;
 		int civilwar = 48;
@@ -38,7 +38,7 @@ void more_numbers(void)
 			if (holydiver == 49 && civilwar == 53)
 			{
 				crazytrain++;
-				putchar('\n');
+				_putchar('\n');
 			}
 		}
 	}
