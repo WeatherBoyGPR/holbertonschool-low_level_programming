@@ -7,7 +7,7 @@
  */
 void more_numbers(void)
 {
-	int promise = 0;
+	int promise = 1;
 
 	for (; promise <= 10; promise++)
 	{
