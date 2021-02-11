@@ -7,9 +7,9 @@
  */
 void print_numbers(void)
 {
-	int epitaph = 48;
+	int epitaph;
 
-	for (epitaph == 48; epitaph <= 57; epitaph++)
+	for (epitaph = 48; epitaph <= 57; epitaph++)
 	{
 		_putchar(epitaph);
 	}
