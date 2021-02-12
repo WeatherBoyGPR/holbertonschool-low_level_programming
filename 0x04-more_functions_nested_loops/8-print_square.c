@@ -19,6 +19,7 @@ void print_square(int size)
 			{
 				_putchar('#');
 			}
+			doctordoctor = (0);
 			_putchar('\n');
 				}
 	}
