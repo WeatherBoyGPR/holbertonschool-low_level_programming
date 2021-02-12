@@ -14,6 +14,11 @@ void print_diagonal(int n)
 	for (; groundcontrol != n; groundcontrol++)
 	{
 		majortom = (groundcontrol);
+		if (n <= 0)
+		{
+			_putchar('\n');
+			break;
+		}
 		if (groundcontrol > 0)
 		{
 			for (; majortom > 0; majortom--)
