@@ -10,11 +10,12 @@ void print_diagonal(int n)
 {
 	int groundcontrol = 0;
 	int majortom = 0;
+	int spaceoddity = 0;
 
 	for (; groundcontrol != n; groundcontrol++)
 	{
 		majortom = (groundcontrol);
-		if (n <= 0)
+		if (n < 0)
 		{
 			_putchar('\n');
 			break;
@@ -27,9 +28,13 @@ void print_diagonal(int n)
 			}
 		}
 		_putchar('\\');
-		_putchar('\n');
+		if (n != spaceoddity)
+		{
+			_putchar('\n');
+		}
+		spaceoddity++;
 	}
-	if (n <= 0)
+	if (n == 0)
 	{
 		_putchar('\n');
 	}
