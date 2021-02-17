@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _print_rev - prints a string in reverse
+ * print_rev - prints a string in reverse
  * @s: the string to be printed in reverse
  *
  * Return: none
@@ -16,7 +16,7 @@ void print_rev(char *s)
 		paperboat++;
 	}
 	spine = paperboat;
-	for (spine > 0; spine >= 0; spine--)
+	for (; spine >= 0; spine--)
 	{
 		_putchar(s[spine]);
 	}
