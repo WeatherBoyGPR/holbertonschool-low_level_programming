@@ -6,7 +6,7 @@
  *
  * Return: none
  */
-int _puts(char *str)
+void _puts(char *str)
 {
 	int paperboat = 0;
 
@@ -16,5 +16,4 @@ int _puts(char *str)
 		paperboat++;
 	}
 	_putchar('\n');
-	return (paperboat);
 }
