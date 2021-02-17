@@ -10,9 +10,9 @@ int _puts(char *str)
 {
 	int paperboat = 0;
 
-	while (s[paperboat] != '\0')
+	while (str[paperboat] != '\0')
 	{
-		_putchar(s[paperboat]);
+		_putchar(str[paperboat]);
 		paperboat++;
 	}
 	_putchar('\n');
