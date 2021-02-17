@@ -1,0 +1,20 @@
+#include "holberton.h"
+
+/**
+ * _puts - prints a string
+ * @str: the string to be printed
+ *
+ * Return: none
+ */
+int _puts(char *str)
+{
+	int paperboat = 0;
+
+	while (s[paperboat] != '\0')
+	{
+		_putchar(s[paperboat]);
+		paperboat++;
+	}
+	_putchar('\n');
+	return (paperboat);
+}
