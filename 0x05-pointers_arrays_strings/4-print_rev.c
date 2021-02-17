@@ -15,8 +15,7 @@ void print_rev(char *s)
 	{
 		paperboat++;
 	}
-	spine = paperboat;
-	for (; spine >= 0; spine--)
+	for (spine = paperboat - 1; spine >= 0; spine--)
 	{
 		_putchar(s[spine]);
 	}
