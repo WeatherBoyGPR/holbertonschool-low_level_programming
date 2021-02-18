@@ -13,7 +13,8 @@ char *_strcat(char *dest, char *src)
 	int impossible = 0;
 /*this represents the length of src*/
 	int sickness = 0;
-/*this is used to regulate the string appending
+/*
+ *this is used to regulate the string appending
  *it mainly controls how many characters are appended,
  *which characters are appended, and where they are appended to and from
  */
@@ -28,8 +29,6 @@ char *_strcat(char *dest, char *src)
 	{
 		sickness++;
 	}
-/*this should overwrite the null value in dest with a whitespace*/
-	dest[impossible] = ' ';
 /*this should append the string*/
 	while (signals != sickness)
 	{
