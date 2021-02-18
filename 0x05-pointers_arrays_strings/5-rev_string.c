@@ -10,6 +10,7 @@ void rev_string(char *s)
 {
 	int paperboat = 0;
 	int become = 0;
+	int spine = 0;
 	char circle;
 
 	while (s[paperboat] != '\0')
@@ -17,7 +18,7 @@ void rev_string(char *s)
 		paperboat++;
 	}
 	paperboat--;
-	while (paperboat % 2 == 0)
+	while (spine == 0)
 	{
 		circle = s[paperboat - become];
 		s[paperboat - become] = s[become];
@@ -25,7 +26,7 @@ void rev_string(char *s)
 		become++;
 		if (become > (paperboat / 2))
 		{
-			paperboat++;
+			spine++;
 		}
 	}
 }
