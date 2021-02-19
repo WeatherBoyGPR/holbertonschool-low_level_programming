@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strcat - will append two strings together
+ * _strncat - will append two strings together up to n bytes
  *@dest : the string that will be appended
  *@src : the string that will be used to append
  *@n : the maximum number of bytes
