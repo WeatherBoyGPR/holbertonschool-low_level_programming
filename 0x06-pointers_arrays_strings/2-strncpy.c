@@ -26,7 +26,7 @@ char *_strncpy(char *dest, char *src, int n)
 		sickness++;
 	}
 /*this should copy the string*/
-	while (signals < sickness && signals <= n)
+	while (signals < sickness && src[signals] != '\0' && signals <= n)
 	{
 		dest[signals] = src[signals];
 		signals++;
