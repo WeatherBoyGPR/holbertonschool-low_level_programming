@@ -34,7 +34,7 @@ char *_strncpy(char *dest, char *src, int n)
 /*This should wipe the rest of the string*/
 	while (signals < n)
 	{
-		dest[signals] = 0;
+		dest[signals] = '\0';
 		signals++;
 	}
 	return (dest);
