@@ -11,11 +11,16 @@ void reverse_array(int *a, int n)
 {
 	int distance;
 	int holder;
+	int N = n;
 
-	for (distance = 0; distance <= ((n - 1) / 2) && n >= 0; distance++)
+	if (n < 0)
 	{
-		holder = a[n - 1 - distance];
-		a[n - 1 - distance] = a[distance];
+		N = N * -1;
+	}
+	for (distance = 0; distance <= ((N - 1) / 2); distance++)
+	{
+		holder = a[N - 1 - distance];
+		a[N - 1 - distance] = a[distance];
 		a[distance] = holder;
 	}
 }
