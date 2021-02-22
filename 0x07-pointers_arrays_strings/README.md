@@ -1,0 +1,1 @@
+This seems to be the directory devoted to that chess game
