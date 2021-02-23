@@ -18,5 +18,5 @@ char *_strchr(char *s, char c)
 			return (s + incre);
 		}
 	}
-	return ('NUL');
+	return ('\0');
 }
