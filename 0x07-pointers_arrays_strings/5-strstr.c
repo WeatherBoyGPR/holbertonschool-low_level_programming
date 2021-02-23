@@ -13,12 +13,16 @@ char *_strstr(char *haystack, char *needle)
 	char *target;
 	int incre = 0;
 
-	while (*beginning != '\0')
+	while (*beginning != '\0' && *needle > 0)
 	{
 		target = needle;
 		while (*beginning != *target)
 		{
 			beginning++;
+		}
+		if (*beginning == '\0')
+		{
+			break;
 		}
 		while (*target != '\0' && *target == *beginning)
 		{
@@ -28,12 +32,9 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (*target == '\0')
 		{
-			return (beginning - incre + 1);
+			return (beginning - incre);
 		}
-		else
-		{
-			beginning++;
-		}
+		beginning++;
 	}
 	return (0);
 }
