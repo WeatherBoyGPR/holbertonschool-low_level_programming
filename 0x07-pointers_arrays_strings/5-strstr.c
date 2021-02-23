@@ -3,7 +3,7 @@
 /**
  *_strstr - Searches string haystack for the string needle
  *@haystack: the string to be searched through
- *@needle: the string to be searched for\
+ *@needle: the string to be searched for
  *
  *Return: returns a pointer to the first instance of needle within haystack
  */
@@ -13,16 +13,12 @@ char *_strstr(char *haystack, char *needle)
 	char *target;
 	int incre = 0;
 
-	while (*beginning != '\0' && *needle > 0)
+	while (*beginning != '\0' && *needle != '\0')
 	{
 		target = needle;
 		while (*beginning != *target)
 		{
 			beginning++;
-		}
-		if (*beginning == '\0')
-		{
-			break;
 		}
 		while (*target != '\0' && *target == *beginning)
 		{
@@ -35,6 +31,7 @@ char *_strstr(char *haystack, char *needle)
 			return (beginning - incre);
 		}
 		beginning++;
+		incre = 0;
 	}
 	return (0);
 }
