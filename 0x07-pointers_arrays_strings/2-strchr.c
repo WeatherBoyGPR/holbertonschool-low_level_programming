@@ -1,3 +1,4 @@
+
 #include "holberton.h"
 
 /**
@@ -9,14 +10,14 @@
  */
 char *_strchr(char *s, char c)
 {
-	int incre = 0;
+	int incre;
 
-	do {
+	for (incre = 0; s[incre] != '\0'; incre++)
+	{
 		if (s[incre] == c)
 		{
 			return (&(s[incre]));
 		}
-		incre++;
-	} while (s[incre - 1] != '\0' && s[incre - 2] != c);
+	}
 		return (0);
 }
