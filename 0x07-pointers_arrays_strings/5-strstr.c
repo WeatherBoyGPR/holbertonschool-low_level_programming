@@ -28,7 +28,7 @@ char *_strstr(char *haystack, char *needle)
 		}
 		if (*target == '\0')
 		{
-			return (beginning - incre);
+			return (beginning - incre + 1);
 		}
 		else
 		{
