@@ -20,6 +20,10 @@ char *_strstr(char *haystack, char *needle)
 		{
 			beginning++;
 		}
+		if (*beginning == '\0')
+		{
+			break;
+		}
 		while (*target != '\0' && *target == *beginning)
 		{
 			target++;
