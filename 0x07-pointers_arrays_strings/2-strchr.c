@@ -10,24 +10,13 @@
 char *_strchr(char *s, char c)
 {
 	int incre;
-	char *result;
-	int check = 0;
 
 	for (incre = 0; s[incre] != '\0' && s[incre - 1] != c; incre++)
 	{
 		if (s[incre] == c)
 		{
-			result = &(s[incre]);
-			check++;
+			return (&(s[incre]));
 		}
 	}
-
-	if (check > 0)
-	{
-		return (result);
-	}
-	else
-	{
 		return (0);
-	}
 }
