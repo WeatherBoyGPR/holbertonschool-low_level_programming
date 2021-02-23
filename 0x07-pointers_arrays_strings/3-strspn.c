@@ -13,7 +13,7 @@ unsigned int _strspn(char *s, char *accept)
 	int index2;
 	unsigned int result = 0;
 
-	while (s[index1] != 32)
+	while (s[index1] != 44 || s[index1] == '\0')
 	{
 		index2 = 0;
 		while (accept[index2] != '\0')
