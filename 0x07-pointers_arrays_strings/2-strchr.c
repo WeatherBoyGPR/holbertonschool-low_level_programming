@@ -18,5 +18,9 @@ char *_strchr(char *s, char c)
 			return (s + incre);
 		}
 	}
+	if (s[incre] == c)
+	{
+		return (s + incre);
+	}
 	return ('\0');
 }
