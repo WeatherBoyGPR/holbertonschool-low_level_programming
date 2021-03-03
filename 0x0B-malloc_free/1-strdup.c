@@ -13,6 +13,8 @@ char *_strdup(char *str)
 	int size = 1;
 	char *newstring;
 
+	if (*str == '\0')
+	return (NULL);
 /*used to get size of str*/
 	while (str[size] != '\0')
 	{
