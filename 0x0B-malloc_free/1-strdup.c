@@ -10,25 +10,23 @@
 char *_strdup(char *str)
 {
 	int counter = 0;
-	int size = 1;
+	int size = 0;
 	char *newstring;
 
-	if (*str == '\0')
-	return (NULL);
-/*used to get size of str*/
+/*used to get length of str*/
 	while (str[size] != '\0')
 	{
 		size++;
 	}
 
-	newstring = malloc(size);
+	newstring = malloc(sizeof(char) * (size + 1));
 
 	if (newstring == NULL)
 	{
 		return (NULL);
 	}
 
-	while (counter <= size)
+	while (str[counter] != '\0')
 	{
 		newstring[counter] = str[counter];
 		counter++;
