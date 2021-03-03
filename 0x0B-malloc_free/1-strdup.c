@@ -10,8 +10,14 @@
 char *_strdup(char *str)
 {
 	int counter = 0;
-	int size = sizeof(str);
+	int size = 1;
 	char *newstring;
+
+/*used to get size of str*/
+	while (str[size] != '\0')
+	{
+		size++;
+	}
 
 	newstring = malloc(size);
 
