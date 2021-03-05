@@ -16,7 +16,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *newpoint;
 	unsigned int counter;
-	unsigned int total;
+	unsigned int bytes = 0;
 	unsigned int length1;
 	unsigned int length2;
 
@@ -29,20 +29,20 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	length2 = strlenn(s2);
 
 	if (n >= length2)
-	total = length2;
+	bytes = length2;
 	else
-	total = n;
+	bytes = n;
 
-	newpoint = malloc(sizeof(char) * (length1 + length2 + 1));
+	newpoint = malloc(sizeof(char) * (length1 + bytes + 1));
 
 	if (newpoint == NULL)
-	exit(98);
+	return (NULL);
 
 	for (counter = 0; counter <= length1; counter++)
 	{
 		newpoint[counter] = s1[counter];
 	}
-	for (counter = 0; counter < total; counter++)
+	for (counter = 0; counter < bytes; counter++)
 	{
 		newpoint[counter + length1] = s2[counter];
 	}
@@ -60,9 +60,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 unsigned int strlenn(char *string)
 {
 	unsigned int index = 0;
-
-	if (string[index] == '\0')
-	return (index);
 
 	while (string[index] != '\0')
 	index++;
