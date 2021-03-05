@@ -38,7 +38,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (newpoint == NULL)
 	return (NULL);
 
-	for (counter = 0; counter <= length1; counter++)
+	for (counter = 0; counter < length1; counter++)
 	{
 		newpoint[counter] = s1[counter];
 	}
