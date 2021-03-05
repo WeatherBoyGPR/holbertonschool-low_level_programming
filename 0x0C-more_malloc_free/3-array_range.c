@@ -8,7 +8,7 @@
 *
 *Return: pointer to the created array
 */
-int *array_range(int max, int min)
+int *array_range(int min, int max)
 {
 	int arraysize, holder, index;
 	int *newpoint;
