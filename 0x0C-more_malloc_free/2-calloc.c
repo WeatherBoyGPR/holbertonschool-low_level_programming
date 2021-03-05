@@ -10,20 +10,22 @@
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *lacrime;
-	unsigned int counter;
+	char *lacrime;
+	unsigned int counter = 0;
+	unsigned int total = (nmemb * size);
 
 	if (nmemb == 0 || size == 0)
 	return (NULL);
 
-	lacrime = malloc(size * nmemb);
+	lacrime = malloc(total);
 
 	if (lacrime == NULL)
 	return (NULL);
 
-	for (counter = 0; counter < size; counter++)
+	while (counter < (total / sizeof(char)))
 	{
 		lacrime[counter] = 0;
+		counter++;
 	}
 
 	return (lacrime);
