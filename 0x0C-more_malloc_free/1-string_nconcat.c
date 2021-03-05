@@ -47,7 +47,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		newpoint[counter + length1] = s2[counter];
 	}
 
-	newpoint[length1 + length2 + 1] = '\0';
+	newpoint[length1 + bytes + 1] = '\0';
 	return (newpoint);
 }
 
