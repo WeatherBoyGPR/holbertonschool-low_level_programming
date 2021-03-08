@@ -5,7 +5,7 @@
 *
 *Return: doesn't
 */
-int main()
+int main(void)
 {
 	int incre = 0;
 	char *point;
