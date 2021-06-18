@@ -19,12 +19,12 @@ int main(void)
 	printf("Last digit of %d is %d and is ", n, d);
 	if (d)
 	{
-		if (d > 5)
+		if (d > 5 && d > 0)
 			printf("greater than 5\n");
 		else
 			printf("less than 6 and not 0\n");
 	}
 	else
-		printf("and is 0\n");
+		printf("0\n");
 	return (0);
 }
