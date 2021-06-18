@@ -2,20 +2,24 @@
 
 int main(void)
 {
-	int num;
+	int num, anum;
 
-	for (num = 0; num <= 99; num++)
+	for (num = 0; num <= 9; num++)
 	{
-		if ((num % 100) < (num % 10))
+		for (anum = 0; anum <= 9; anum++)
 		{
-			putchar((num % 100) + 48);
-			putchar((num % 10) + 48);
-			if (num < 89)
+			if (num < anum && num != anum)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(num + 48);
+				putchar(anum + 48);
+				if (((num * 10) + anum) < 89)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
+	putchar('\n');
 	return(0);
 }
