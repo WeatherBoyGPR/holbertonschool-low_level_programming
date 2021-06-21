@@ -9,6 +9,7 @@ int main(void)
 {
 	int num1, num2;
 	int d1, d2, d3, d4;
+
 	d1 = 0;
 	d2 = 0;
 	d3 = 0;
