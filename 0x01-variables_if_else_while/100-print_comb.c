@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - Will print out unique combinations of digits
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	int num, anum;
