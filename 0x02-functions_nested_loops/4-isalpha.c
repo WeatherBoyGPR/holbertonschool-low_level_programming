@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
- * _islower - checks for lettering
+ * _isalpha - checks for lettering
  * @c: the entered value
  *
  * Return: 1 if letter, 0 otherwise
  */
-int _islower(int c)
+int _isalpha(int c)
 {
 	int a = 0;
 
