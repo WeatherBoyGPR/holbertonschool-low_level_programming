@@ -1,5 +1,10 @@
 #include "holberton.h"
 
+/**
+ * print_alphabet - will print the lowercase alphabet
+ *
+ * Return: doesn't
+ */
 void print_alphabet(void)
 {
 	char i;
