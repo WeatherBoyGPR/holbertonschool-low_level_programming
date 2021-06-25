@@ -17,7 +17,7 @@ int main(void)
 		if (!(num % 5))
 			printf("Buzz ");
 		if (!(num % 3) && !(num % 5))
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
 		if (num % 3 && num % 5)
 			printf("%d ", num);
 	}
