@@ -21,7 +21,7 @@ int main(void)
 		if (num % 3 && num % 5)
 			printf("%d ", num);
 	}
-	printf("100\n");
+	printf("Buzz\n");
 
 	return (0);
 }
