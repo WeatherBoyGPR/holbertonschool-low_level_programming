@@ -6,9 +6,15 @@
  *
  * Return: doesn't
  */
-void print_number(int n);
+void print_number(int n)
 {
 	int number = n;
+
+	if (number < 0)
+	{
+		_putchar('-');
+		number *= -1;
+	}
 
 	if (number >= 1000000000)
 		_putchar ((number / 1000000000) + 48);
@@ -29,5 +35,4 @@ void print_number(int n);
 	if (number >= 10)
 		_putchar (((number / 10) % 10) + 48);
 	_putchar ((number % 10) + 48);
-	_putchar('\n');
 }
