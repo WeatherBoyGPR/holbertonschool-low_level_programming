@@ -12,9 +12,9 @@ int main(void)
 
 	for (num = 1; num <= 99; num++)
 	{
-		if (!(num % 3))
+		if (!(num % 3) && (num % 5))
 			printf("Fizz ");
-		if (!(num % 5))
+		if (!(num % 5) && (num % 3))
 			printf("Buzz ");
 		if (!(num % 3) && !(num % 5))
 			printf("FizzBuzz ");
