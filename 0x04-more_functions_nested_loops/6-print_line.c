@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * Will print a line of the length specified by length
+ * print_line - Will print a line of the length specified by length
  * @n: length of the line to be printed
  *
  * Return: doesn't
