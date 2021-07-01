@@ -13,6 +13,9 @@ char *_strncpy(char *dest, char *src, int n)
 	int i;
 	int l = 1;
 
+	if (!(dest) || !(src))
+		return (0);
+
 	for (i = 0; *(src + i) != '\0'; i++)
 		l++;
 
