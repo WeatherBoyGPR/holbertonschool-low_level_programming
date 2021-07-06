@@ -12,6 +12,9 @@ char *_strstr(char *haystack, char *needle)
 	int x;
 	int y = 0;
 
+	if (!(*needle))
+		return (haystack);
+
 	for (x = 0; *(haystack + x) != '\0'; x++)
 	{
 		if (*(haystack + x) != *(needle + y))
