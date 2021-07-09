@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 	int i, res = 0;
 	int coin[] = {25, 10, 5, 2, 1};
 
-	if (argc != 2 || scannum(argv[1]))
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
