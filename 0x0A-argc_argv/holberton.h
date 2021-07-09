@@ -6,5 +6,6 @@
 
 char _putchar(char c);
 int _puts(char *c);
+int scannum(char *c);
 
 #endif
