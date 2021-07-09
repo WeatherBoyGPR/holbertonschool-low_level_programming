@@ -21,7 +21,7 @@ int main(int argc, char **argv)
 
 	n = atoi(argv[1]);
 
-	while (n)
+	while (n > 0)
 	{
 		if (n >= coin[i])
 		{
