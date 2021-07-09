@@ -9,9 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-	int n;
-	int i = 0; 
-	int res = 0;
+	int i = 0, res = 0, n = 0;
 	int coin[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2 || scannum(argv[1]))
