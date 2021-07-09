@@ -2,6 +2,6 @@
 #define BLACKHOLESUN
 
 char _putchar(char c);
-char _puts(char c);
+int _puts(char *c);
 
 #endif
