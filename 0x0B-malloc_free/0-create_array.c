@@ -15,11 +15,12 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	str = malloc(sizeof(char) * size);
 
-	while (size >= 0)
+	while (size)
 	{
 	*(str + size) = c;
 	size--;
 	}
+	*str = c;
 
 	return (str);
 }
