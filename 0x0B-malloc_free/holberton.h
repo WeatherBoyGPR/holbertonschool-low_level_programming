@@ -5,6 +5,7 @@
 #include <stdlib.h>
 
 int _putchar(char c);
+int _strlen(char *c);
 char *create_array(unsigned int, char c);
 char *_strdup(char *str);
 char *str_concat(char *s1, char *s2);
