@@ -12,9 +12,12 @@ char *argstostr(int ac, char **av)
 	int n, y, x, l = 0;
 	char *str;
 
+	if (!av || ac <= 0)
+		return (NULL);
+
 	for (n = 0; n < ac; n++)
 	{
-		if (!(*(av + n)) || !av)
+		if (!(*(av + n)))
 			return (NULL);
 		l += _strlen(*(av + n));
 	}
