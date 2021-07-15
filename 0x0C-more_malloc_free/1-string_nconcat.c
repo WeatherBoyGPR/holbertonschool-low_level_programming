@@ -13,8 +13,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *res;
 	unsigned int i = 0;
 
-	if (!s1 || !s2)
-		return (NULL);
+	if (!s1)
+		s1 = "";
+	if (!s2)
+		s2 = "";
 
 	res = malloc(sizeof(s1) + sizeof(s2) - 1);
 	if (!res)
