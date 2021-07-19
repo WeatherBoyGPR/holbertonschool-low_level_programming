@@ -1,6 +1,12 @@
 #include "dog.h"
 #include <stdio.h>
 
+/**
+ * print_dog - will print dog information to standard output
+ * @d: dog to print information on
+ *
+ * Return: doesn't
+ */
 void print_dog(struct dog *d)
 {
 	if (!d)
