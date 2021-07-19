@@ -1,0 +1,6 @@
+#ifndef ITNEVERRAINSINSOUTHERNCALIFORNIA
+#define ITNEVERRAINSINSOUTHERNCALIFORNIA
+
+#define SUM(x, y) ((x) + (y))
+
+#endif
