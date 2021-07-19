@@ -1,0 +1,6 @@
+#ifndef MAMALIKEDTHEROSES
+#define MAMALIKEDTHEROSES
+
+#define SIZE 1024
+
+#endif
