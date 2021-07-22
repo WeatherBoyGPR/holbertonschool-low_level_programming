@@ -1,5 +1,5 @@
 #ifndef HIGHVOLTAGE
-#define HIGHvOLTAGE
+#define HIGHVOLTAGE
 
 #include <stdio.h>
 #include <stdarg.h>
