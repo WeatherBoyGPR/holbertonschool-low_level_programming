@@ -32,4 +32,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%s", s);
 	}
 	printf("\n");
+
+	va_end(args);
 }
