@@ -10,7 +10,7 @@ mov eax, 4
 mov ebx, 1
 mov ecx, screenmessage
 mov edx, len
-int 80h
+int 0x80
 
 mov eax, 1
 xor ebx, ebx
