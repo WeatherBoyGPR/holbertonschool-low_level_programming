@@ -18,7 +18,7 @@ void print_all(const char * const format, ...)
 	va_list arg;
 	char *sep = "";
 
-	if (!format)
+	if (format == NULL)
 	{
 		printf("\n");
 		return;
