@@ -18,6 +18,12 @@ void print_all(const char * const format, ...)
 	va_list arg;
 	char *sep = "";
 
+	if (!format)
+	{
+		printf("\n");
+		return;
+	}
+
 	va_start(arg, format);
 
 	while (*(format + y) != '\0' && format)
