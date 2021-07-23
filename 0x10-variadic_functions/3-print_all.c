@@ -20,7 +20,7 @@ void print_all(const char * const format, ...)
 
 	va_start(arg, format);
 
-	while (*(format + y) != '\0' && format != NULL)
+	while (format != NULL && *(format + y) != '\0')
 	{
 		x = 0;
 		while (x < 4 && *(format + y) != *(fun[x].sym))
