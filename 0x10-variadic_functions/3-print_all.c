@@ -18,15 +18,9 @@ void print_all(const char * const format, ...)
 	va_list arg;
 	char *sep = "";
 
-	if (format == NULL)
-	{
-		printf("\n");
-		return;
-	}
-
 	va_start(arg, format);
 
-	while (*(format + y) != '\0' && format)
+	while (*(format + y) != '\0' && format != NULL)
 	{
 		x = 0;
 		while (x < 4 && *(format + y) != *(fun[x].sym))
