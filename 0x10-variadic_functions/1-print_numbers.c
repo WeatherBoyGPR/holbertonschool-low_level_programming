@@ -15,8 +15,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	int buf;
 
 	if (!n)
+	{
+		printf("\n");
 		return;
-
+	}
 	va_start(args, n);
 
 	if (separator)
