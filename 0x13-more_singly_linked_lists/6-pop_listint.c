@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+ * pop_listint - will free the first node in a linked list
+ * @head: linked list to process
+ *
+ * Return: the value stored in the first node
+ */
 int pop_listint(listint_t **head)
 {
 	int num = 0;
