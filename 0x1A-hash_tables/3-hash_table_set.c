@@ -14,20 +14,17 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int idx = 0;
+	int i = 0;
 	hash_node_t *newnode = NULL;
 	char *hold = NULL, *nkey = NULL;
-	int i = 0;
 
-	if (key[0] == '\0')
+	if (key[0] == '\0' || ht == NULL)
 		return (0);
-	/* gets index from hash */
 	idx = key_index((unsigned char *)key, ht->size);
-	/* checks index, i is non zero if key isn't at index */
-	if (((ht->array)[idx]) != NULL)
-		i = strcmp(((ht->array)[idx])->key, key);
-	if (i || ((ht->array)[idx]) == NULL)
+	i = check_list(((ht->array)[idx]), key);
+	newnode = ((ht->array)[idx]);
+	if (i <= 0)
 	{
-		/* creates new node and mallocs key string*/
 		newnode = malloc(sizeof(hash_node_t));
 		if (newnode == NULL)
 			return (0);
@@ -42,15 +39,57 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (!i)
 			newnode->next = (ht->array)[idx];
 		(ht->array)[idx] = newnode;
-
 	}
-	/* sets up for value being inserted at existing node */
-	else
-		newnode = ((ht->array)[idx]);
 	hold = malloc(strlen(value) + 1);
 	if (hold == NULL)
+	{
+		if (i <= 0)
+			(ht->array)[idx] = newnode->next, free(nkey), free(newnode);
 		return (0);
+	}
 	strcpy(hold, value);
-	newnode->value = hold;
+	if (i == 1)
+		insert_value_in_list((ht->array)[idx], key, hold);
+	else
+		newnode->value = hold;
+	return (1);
+}
+
+/**
+ * insert_value_in_list - will insert a prealloced string into the correct node
+ * @list: list to insert value into, never NULL
+ * @key: key of target node
+ * @value: value to insert
+ *
+ * Return: Nothing
+ */
+void insert_value_in_list(hash_node_t *list, const char *key, char *value)
+{
+	hash_node_t *hold = list;
+
+	while ((strcmp(key, hold->key)))
+		hold = hold->next;
+	free(hold->value);
+	hold->value = value;
+}
+
+/**
+ * check_list - will check a hash_node_t list for the presence of a key
+ * @list: list to check
+ * @key: key to check for
+ *
+ * Return: 1 on a match, -1 on NULL otherwise 0
+ */
+int check_list(hash_node_t *list, const char *key)
+{
+	hash_node_t *hold = NULL;
+
+	if (list == NULL)
+		return (-1);
+	hold = list;
+	while (hold != NULL && (strcmp(hold->key, key)))
+		hold = hold->next;
+	if (hold == NULL)
+		return (0);
 	return (1);
 }
