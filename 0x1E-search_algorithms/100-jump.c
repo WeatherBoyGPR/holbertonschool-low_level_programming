@@ -25,15 +25,12 @@ int jump_search(int *array, size_t size, int value)
 			i = j, j += s;
 		}
 		printf(format2, i, j);
-		while (array[i] != value && i < size)
+		while (i <= j && i < size)
 		{
 			printf(format1, i, array[i]);
+			if (array[i] == value)
+				return (i);
 			i++;
-		}
-		if (j < size || i < size)
-		{
-			printf(format1, i, array[i]);
-			return (i);
 		}
 	}
 	return (-1);
