@@ -19,7 +19,7 @@ int jump_search(int *array, size_t size, int value)
 
 	if (array != NULL)
 	{
-		while (array[j] < value && j < size)
+		while (j < size && array[j] < value)
 		{
 			printf(format1, j, array[j]);
 			i = j, j += s;
